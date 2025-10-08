@@ -1,1 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Devis • Nirina Clean</title>
+  <meta name="description" content="Contactez Nirina Clean — Devis gratuit. Téléphone, email, formulaire en ligne.">
+  <meta name="theme-color" content="#C14F8A">
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
 
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img class="avatar" src="assets/avatar.png" alt="Avatar Nirina Clean" />
+      <span class="brand-text">
+        <span class="brand-top">Nirina Clean</span>
+        <span class="brand-sub">Services à la personne</span>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Prestations</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="section container" id="devis">
+  <h1>Contact & Devis</h1>
+  <div class="grid-2">
+    <div>
+      <p>Une question, un devis ? Écrivez-nous, on vous répond rapidement.</p>
+      <ul class="contact-list">
+        <li>📞 <a href="tel:+33650330111">06 50 33 01 11</a></li>
+        <li>✉️ <a href="mailto:NirinaClean@gmail.com">NirinaClean@gmail.com</a></li>
+        <li>📍 Lyon et alentours</li>
+      </ul>
+      <p><em>Horaires :</em> du lundi au samedi, 9h–19h</p>
+    </div>
+    <div class="form-card">
+      <h3>Demander un devis</h3>
+      <form action="https://formsubmit.co/NirinaClean@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Demande de devis - Nirina Clean">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <label>Nom*</label>
+        <input required name="Nom" placeholder="Votre nom">
+        <label>Email*</label>
+        <input required type="email" name="Email" placeholder="vous@example.com">
+        <label>Téléphone*</label>
+        <input required name="Téléphone" placeholder="06 00 00 00 00">
+        <label>Adresse / Ville*</label>
+        <input required name="Adresse" placeholder="Adresse et ville">
+        <label>Prestations souhaitées</label>
+        <div class="checks-collumn">
+          <label><input type="checkbox" name="Prestations" value="Ménage"> Ménage</label>
+          <label><input type="checkbox" name="Prestations" value="Repassage"> Repassage</label>
+          <label><input type="checkbox" name="Prestations" value="Vitres"> Vitres</label>
+          <label><input type="checkbox" name="Prestations" value="Rangement"> Rangement</label>
+        </div>
+        <label>Votre message</label>
+        <textarea name="Message" rows="5" placeholder="Décrivez votre besoin, votre disponibilité…"></textarea>
+        <button class="btn fill" type="submit">Envoyer</button>
+      </form>
+      <p class="form-note">En envoyant ce formulaire, vous acceptez d’être recontacté(e) par Nirina Clean.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container grid-3">
+    <div>
+      <h4>Nirina Clean</h4>
+      <p>Ménage, repassage, vitres & rangement — simple, soigné, fiable.</p>
+      <p><strong>SIREN</strong> : 944 579 879</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="unstyled">
+        <li><a href="tel:+33650330111">06 50 33 01 11</a></li>
+        <li><a href="mailto:NirinaClean@gmail.com">NirinaClean@gmail.com</a></li>
+        <li>Lyon et alentours</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Infos utiles</h4>
+      <ul class="unstyled">
+        <li><a href="mentions.html">Mentions légales</a></li>
+        <li>Avance immédiate Urssaf (crédit d'impôt 50%)</li>
+      </ul>
+      <a class="btn ghost" href="contact.html">Demander un devis</a>
+    </div>
+  </div>
+  <p class="copyright">© 2025 Nirina Clean — Tous droits réservés.</p>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
