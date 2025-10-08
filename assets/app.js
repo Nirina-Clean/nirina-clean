@@ -18,7 +18,7 @@ document.querySelectorAll('[data-tabs]').forEach(tabs => {
       panels.forEach(p => p.hidden = true);
       btn.setAttribute('aria-selected', 'true');
       const panel = tabs.querySelector('#' + btn.getAttribute('aria-controls'));
-      panel.hidden = false;
+      if (panel) panel.hidden = false;
     });
   });
 });

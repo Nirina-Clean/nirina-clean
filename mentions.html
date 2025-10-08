@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mentions légales • Nirina Clean</title>
   <meta name="description" content="Mentions légales de Nirina Clean.">
-  <meta name="theme-color" content="#C14F8A">
+  <meta name="theme-color" content="#5B4B8A">
   <link rel="icon" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
@@ -15,23 +15,29 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="index.html">
-      <img class="avatar" src="assets/avatar.png" alt="Avatar Nirina Clean" />
+    <a class="brand" href="index.html" aria-label="Accueil Nirina Clean">
+      <span class="logo-svg" aria-hidden="true">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#9B87F5"/>
+              <stop offset="1" stop-color="#5B4B8A"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#g)"/>
+          <path d="M20 40 V24 L34 40 V24" stroke="white" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M48 18 l3 0 m-1.5 -1.5 l0 3 M46.2 19.8 l2.1-2.1 M49.8 19.8 l-2.1-2.1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
       <span class="brand-text">
         <span class="brand-top">Nirina Clean</span>
         <span class="brand-sub">Services à la personne</span>
       </span>
     </a>
     <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
-    <nav class="site-nav">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="services.html">Prestations</a></li>
-        <li><a href="tarifs.html">Tarifs</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <nav class="site-nav"><ul>
+      <li><a href="index.html">Accueil</a></li><li><a href="services.html">Prestations</a></li><li><a href="tarifs.html">Tarifs</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></nav>
   </div>
 </header>
 
@@ -39,7 +45,7 @@
   <h1>Mentions légales</h1>
   <p><strong>Entreprise :</strong> Nirina Clean — SIREN 944 579 879</p>
   <p><strong>Email :</strong> NirinaClean@gmail.com — <strong>Téléphone :</strong> 06 50 33 01 11</p>
-  <p>Site édité par Nirina Clean. Hébergement recommandé : GitHub Pages (gratuit).</p>
+  <p>Site édité par Nirina Clean. Hébergement : GitHub Pages (gratuit).</p>
 </section>
 
 <footer class="site-footer">
@@ -63,11 +69,12 @@
         <li><a href="mentions.html">Mentions légales</a></li>
         <li>Avance immédiate Urssaf (crédit d'impôt 50%)</li>
       </ul>
-      <a class="btn ghost" href="contact.html">Demander un devis</a>
+      <a class="btn ghost" href="contact.html#devis">Demander un devis</a>
     </div>
   </div>
   <p class="copyright">© 2025 Nirina Clean — Tous droits réservés.</p>
 </footer>
+<a class="floating-cta" href="contact.html#devis" aria-label="Demander un devis">Demander un devis</a>
 <script src="assets/app.js"></script>
 </body>
 </html>
